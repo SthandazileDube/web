@@ -1,0 +1,288 @@
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.message{
+    background-color: darkblue;
+    position: sticky;
+    top:0; left:0;
+    z-index: 10000;
+    border-radius: .5rem;
+    background-color: white;
+    padding: 1.5rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+}
+
+.message span{
+    font-size: 2rem;
+    color: black;
+}
+
+.message i{
+    font-size: 2.5rem;
+    color: black;
+    cursor: pointer;
+}
+
+.message i:hover{
+color: lightblue;
+
+}
+
+.container3{
+    max-width: 1200px;
+    margin: 0 auto;
+ 
+}
+
+section{
+    padding: 2rem;
+
+}
+.display-product-table table{
+    width: 100%;
+    text-align: center;
+}
+
+.display-product-table table thead th{
+    padding: 1.5rem;
+    font-size: 2rem;
+    background-color: black;
+    color: white ;
+}
+
+.display-product-table table  td{
+    font-size: 1rem;
+    color: black;
+}
+
+.display-product-table table  td:first-child{
+    padding: 0;
+}
+
+.display-product-table table tr:nth-child(even){
+    background-color: grey;
+}
+
+.edit-form-container{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1100;
+    background-color: lightblue;
+    opacity: 0.9;
+    padding: 2rem;
+    display: none ;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem;
+}
+
+.edit-form-container form{
+    width: 50rem;
+    border-radius: .5rem;
+    background-color: white;
+    text-align: center;
+
+}
+
+.edit-form-container form .box{
+    width: 30%;
+    background-color: lightblue;
+    border-radius: .5rem;
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    color: black;
+   padding: 1rem;
+    text-transform: none;
+}
+.btn,
+.option-btn,
+.delete-btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    font-size: 1.7rem;
+    padding: 1.2rem 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+
+}
+
+.btn:hover,
+.option-btn:hover,
+.delete-btn:hover{
+    background-color: red;
+}
+
+.option-btn i,
+.delete-btn i{
+    padding-right: .5rem;
+}
+
+.option-btn{
+    background-color: orangered;
+}
+.delete-btn{
+    margin-top: 0;
+    background-color: lightblue;
+}
+.add-product-form{
+    max-width: 40rem;
+    background-color: lightblue;
+    border-radius: .5rem;
+    padding: 2rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.add-product-form h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.add-product-form .box{
+    text-transform: none;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.7rem;
+    color: black;
+    border-radius: .5rem;
+    background-color:white;
+    margin: 1rem 0;
+    width: 95%;
+}
+
+img{
+    width: 300px;
+    height: 80px;
+}
+
+.header{
+    background-color: lightblue;
+    position: sticky;
+    top: 0; left: 0;
+    z-index: 1000;
+}
+
+.header .flex{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.header .flex a{
+    margin-left: 5rem;
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+
+}
+
+.header .flex  a:hover{
+    color:blue;
+}
+
+.header .flex .cart span{
+    padding: .3rem .5rem;
+    border-radius: .5rem;
+    background-color: blue;
+    color: black;
+    font-size: 2rem;
+}
+
+.header .flex .cart{
+    margin-left: 50rem;
+}
+
+
+#menu-btn{
+    margin-left: 3rem;
+    font-size: 3rem;
+    cursor: pointer;
+    color: black;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries*/
+@media (max-width:991px){
+
+    html{
+        font-size:55%;
+    }
+
+    
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+      display: inline-block;  
+      transition: .2s linear;
+    }
+
+    .header .flex .navbar{
+        position: absolute;
+        top: 80%; left: 0; right: 0;
+        background-color: lightblue;
+        clip-path: polgon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .flex .navbar .active{
+        clip-path: polgon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .flex .navbar a{
+        margin: 2rem;
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .display-product-table{
+        overflow-x: scroll;
+    }
+
+    .display-product-table table{
+        width: 80rem;
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size:50%;
+    }
+}
+
+
+
+
+
